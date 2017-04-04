@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 #define ATOM_CSUM_OFFSET		0x21
-
+float version = 1.01;
 int main(int argc, char **argv)
 {
 	FILE *VBIOSFile;
@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 	
 	if(argc != 2)
 	{
+		printf("OhGodACsumFixer v%0.2f\n", version);
 		printf("Usage: %s <VBIOS file>\n", argv[0]);
 		return(1);
 	}
